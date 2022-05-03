@@ -96,7 +96,7 @@ while True:  #(ESTE APARTADO FUE PROGRAMADO POR ANGEL SAUL DAVALOS FRAUSTRO)
         Fecha.append(fecha) #apartado que guarda la fecha(PARTE AGRAGADA POR SAMUEL OBED GARCIA GOMEZ)
 
         # whil true que nos pide los artidulos y servicios a agregar ademas del precio
-        while True: #(ESTE WHILE TRUE COMPLETO FUE PROGRAMADO POR RUEBEN ALEXIS CRUZ QUIÑONES) 
+        while True: #(ESTE WHILE TRUE COMPLETO FUE PROGRAMADO POR RUBEN ALEXIS CRUZ QUIÑONES) 
             descripcion = input("Ingresa el articulo al que le haremos el servicio: ")
             if descripcion == "":
                 print("***No me has dado ningun articulo***")
@@ -125,7 +125,7 @@ while True:  #(ESTE APARTADO FUE PROGRAMADO POR ANGEL SAUL DAVALOS FRAUSTRO)
                 total_mas_iva = total_venta + IVA
                 print(f"El total a pagar es: {total_mas_iva}")
                 print(f"El IVA a pagar es de: {IVA}")
-                break #(ESTE WHILE TRUE PROGRAMADO POR RUEBEN ALEXIS CRUZ QUIÑONES TERMINA AQUI)
+                break #(ESTE WHILE TRUE PROGRAMADO POR RUBEN ALEXIS CRUZ QUIÑONES TERMINA AQUI)
     
 
     #if opcion 2 aqui se hace la consulta por folio de un cliente y sus articulos a dar servicio
@@ -180,7 +180,7 @@ while True:  #(ESTE APARTADO FUE PROGRAMADO POR ANGEL SAUL DAVALOS FRAUSTRO)
                 print(f'Total a pagar: {total_mas_iva}')#(ESTE ELIF PROGRAMADO POR RUEBEN ALEXIS CRUZ QUIÑONES TERMINA AQUI)
 
     # opcion 4 que nos consulta los registros en un rango de fechas que el usario ingrese
-    elif OpcionMenu == 4:#(ESTE APARTADO FUE PROGRAMADO POR RUEBEN ALEXIS CRUZ QUIÑONES)
+    elif OpcionMenu == 4:#(ESTE APARTADO FUE PROGRAMADO POR RUBEN ALEXIS CRUZ QUIÑONES)
         print("--Ingresa el rango de fechas que quieres consultar--")
         #validacion de las fechas que el usario quiere consultar con el formato datetime
         try:
@@ -200,7 +200,7 @@ while True:  #(ESTE APARTADO FUE PROGRAMADO POR ANGEL SAUL DAVALOS FRAUSTRO)
         df = df.set_index(['Fechas']) #este sera el indice que tiene nuestra tabla hecha con pandas
         
         filtered_df=df.loc[fecha_1 : fecha_2] #esta variable busca ente las fechas que registro el usario 
-        print("\n", filtered_df)#(ESTE APARTADO PROGRAMADO POR RUEBEN ALEXIS CRUZ QUIÑONES TERMINA AQUI)
+        print("\n", filtered_df)#(ESTE APARTADO PROGRAMADO POR RUBEN ALEXIS CRUZ QUIÑONES TERMINA AQUI)
 
     # opcion 5 que nos permite guradar y registrar los datos en un archivo CSV
     elif OpcionMenu == 5:#(ESTE APARTADO FUE PROGRAMADO POR SAMUEL OBED GARCIA GOMEZ)
